@@ -223,7 +223,10 @@ else:
 			# Split the file into the good taxa and flagged taxa
 			search_flag = 'Flag'
 			flag = re.search(search_flag, Fixedline)
-			if flag != None:
+			# Excluse Metazoans from the flagged file, since we do not look at them anyways
+			search_meta = 'Metazoa'
+			meta = re.search(search_meta, Fixedline)
+			if (flag != None) & (meta is None):
 				OutfileFlag.write(Fixedline + ', ' + line )
 			else:
 				OutfileGood.write(Fixedline + '\n')
