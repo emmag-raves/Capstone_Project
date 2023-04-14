@@ -33,7 +33,7 @@ for that group that do not follow the normal suffix conventions.
 
 A small subset of metabarcoding data from Southern Ocean Phytoplankton communities has been included in this respository
 for testing the script. It can be found [here](https://github.com/emmag-raves/Capstone_Project/blob/main/Example_Data/Example_taxa.csv).
-This data is a subset of the larger dataset that was used to construct this specific script, and is the result
+This data is a subset of the larger dataset that was used to construct this specific script, which was the result
 of matching sequences with the [SILVA database](https://www.arb-silva.de).
 
 ## Instructions for using the code:
