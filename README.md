@@ -9,9 +9,13 @@ Emma Graves
 For DNA metabarcoding, 16S or 18S (small subunit) ribosomal DNA is sequenced for each sample, resulting in
 a large list of short DNA sequences that is then matched to taxonomy using various different databases. 
 Since taxonomy for many organisms, specifically phytoplankton, is ever changing, many databases have 
-a different number of classifications for each organism. For example, some organisms are only have a kingdom, phylum, 
+a different number of classifications for each organism. 
+
+For example, some organisms are only have a kingdom, phylum, 
 family, genus, and species listed, whereas others have a kingdom, clade, phylum, subphylum, class, subclass, 
-order, suborder, family, subfamily, genus, and species. This means that when one's sequences are matched with the 
+order, suborder, family, subfamily, genus, and species listed. 
+
+This means that when my sequences are matched with the 
 database, the resulting taxonomy file has various levels of classification and each rank does not line up in the same
 column or item number within that line.
 
@@ -25,12 +29,12 @@ levels that are unnecessary for further analysis.
 This code is designed to work for **eukaryotic phytoplankton** taxonomy. It includes general rank suffixes (ie. -phyta for phylum),
 as well as specific phytoplankton taxonomy assignments that do not follow the normal taxonomic conventions. This script
 should be edited before using it on taxonomy from any other group of organisms, in order to include taxonomy assignments
-for that group that do not follow the normal conventions. 
+for that group that do not follow the normal suffix conventions. 
 
 A small subset of metabarcoding data from Southern Ocean Phytoplankton communities has been included in this respository
-for testing the script. This data is a subset of the larger dataset that was used to construct this specific script, and is the result
-of matching sequences with the [SILVA database](https://www.arb-silva.de). The data file used can be found [here](https://github.com/emmag-raves/Capstone_Project/blob/main/Example_Data/Example_taxa.csv).
-
+for testing the script. It can be found [here](https://github.com/emmag-raves/Capstone_Project/blob/main/Example_Data/Example_taxa.csv).
+This data is a subset of the larger dataset that was used to construct this specific script, and is the result
+of matching sequences with the [SILVA database](https://www.arb-silva.de).
 
 ## Instructions for using the code:
 Example data can be found in [this folder](https://github.com/emmag-raves/Capstone_Project/tree/main/Example_Data). The `Example_taxa.csv` file is an example input file, and the other two files in the folder are the expected output files from this example input file.
