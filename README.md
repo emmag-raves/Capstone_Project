@@ -7,7 +7,16 @@ Emma Graves
 ## Overview of the project:
 
 
+
 ## Data
+
+This code is designed to work for **eukaryotic phytoplankton** taxonomy. It includes general rank suffixes (ie. -phyta for phylum),
+as well as specific phytoplankton taxonomy assignments that do not follow the normal taxonomic conventions. This script
+should be edited before using it on taxonomy from any other group of organisms, in order to include taxonomy assignments
+for that group that do not follow the normal conventions. 
+
+A small subset of metabarcoding data from Southern Ocean Phytoplankton communities has been included in this respository
+for testing the script. This data is a subset of the larger dataset that was used to construct this specific script. It can be found [here](https://github.com/emmag-raves/Capstone_Project/blob/main/Example_Data/Example_taxa.csv).
 
 
 ## Instructions for using the code:
@@ -31,6 +40,7 @@ everything from the Workflow script, plus more, so the Workflow script should on
 
 ## Useful software information:
 Version of python: Python 3.9.7
+
 Packages used: 
 - re : Regular Expressions Operations
 - pandas : Powerful Python Data Analysis Toolkit
