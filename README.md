@@ -22,7 +22,12 @@ column or item number within that line.
 
 The goal of my capstone project was to create a python script that would clean up taxonomy assignment files
 so that each rank was placed in the correct column for all the sequences, as well as remove some of the extra classification
-levels that are unnecessary for further analysis. 
+levels that are unnecessary for further analysis. The [Taxonomy_cleanup.py](https://github.com/emmag-raves/Capstone_Project/blob/main/Taxonomy_cleanup.py) script
+takes in a csv or txt file with rows of sequences and associated taxonomy, in a similar format to the 
+[Example_taxa.csv](https://github.com/emmag-raves/Capstone_Project/blob/main/Example_Data/Example_taxa.csv) file provided.
+The script then runs and searches each taxonomic rank in each line and returns two files into the current
+working directory: a cleaned up taxonomy file (Good_taxa.csv) and a file with incomplete or flagged lines 
+(Flag_taxa.csv).
 
 ## Data
 
